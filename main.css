@@ -1,0 +1,158 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+    box-sizing: border-box ;
+}
+
+.slider{
+    background: url(images/banner.jpeg);
+    height: 100vh ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*parallax effect */
+    opacity: 0.9 ;
+}
+
+
+
+
+/* Animation for text on slider */
+
+.text-animation h3, h4, h2{
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+   
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #103756;
+    width: 100% ;
+}
+
+/* Icons from the foooter */
+
+#icon-1{
+    color: #4267b2;
+}
+#icon-2{
+    color:white ;
+}
+
+#icon-3{
+    color: red ;
+}
+
+#icon-4{
+    color: #0077B5 ;
+}
+
+#icon-5{
+    color: #c32aa3 ;
+}
+
+
+/* Media for devices  */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media (min-width: 320px) 
+    and (max-width: 568px){
+        #title-top{
+            margin-top: 20px ;
+            font-size: 20px ;
+            font-weight: bold ;
+        }
+        #title{
+            font-size: 40px ;
+            text-transform: uppercase ;
+        }
+        .slider{
+            opacity: 1 ;
+            margin-bottom: 10px ;
+        }
+        #video{
+            margin-top: 10px ;
+        }
+        #sign-footer{
+            margin-top: 10px ;
+        }
+    }
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+    @media (min-width: 564px) 
+        and (max-width: 667px) {
+        #title-top {
+            font-size: 35px ;
+            font-weight: bold ;
+            margin-bottom: 10px ;
+            margin-top: auto ;
+        }
+        #title{
+            font-size: 60px ;
+            text-transform: uppercase ;
+        }
+        #video{
+            margin-top: 1rem ;
+        }
+        #footer-text{
+            font-size: 20px ;
+        }
+    }
+
+
+/* ----------- iPhone X ----------- */
+
+ @media  (min-width: 375px) 
+    and (max-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+
+        #slider {
+
+            margin-bottom: 10px ;
+            margin-top: 0px ;
+        }
+        #title-top{
+            vertical-align: top ;
+        }
+
+} 
+
